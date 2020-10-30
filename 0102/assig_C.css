@@ -1,0 +1,81 @@
+/*Assignment C
+
+Create a CSS stylesheet for HTML page from Assignment A. It should meet the following requirements:
+
+1. Define font style and size for paragraphs and headers
+
+2. Define style and color of table borders
+
+3. Remove underlines from links
+
+4. Change the style of markers for unordered lists */
+
+p {
+  font-style: oblique;
+  font-size: 15px;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #f6546a;
+  color: white;
+  font-size: 30px;
+}
+
+ul.ul1 {
+  list-style-type: georgian;
+}
+
+ul.ul2 {
+  list-style-type: kannada;
+}
+
+ul.ul3 {
+  list-style-type: cjk-ideographic;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#table1 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table1 td, #table1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table1 tr:nth-child(even){background-color: #f2f2f2;}
+
+#table1 tr:hover {background-color: #ddd;}
+
+#table1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f6546a;
+  color: white;}
+  
+  
+
+
+#table2 {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+	
+	
+#table2	td, th {
+	  border: 1px solid #dddddd; <!--border color// -->
+	  text-align: center;
+	  padding: 10px;
+	  background-color: #f6546a;
+	}
+	
+	

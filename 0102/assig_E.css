@@ -1,0 +1,21 @@
+/*Assignment E
+Create a HTML page and CSS stylesheet showing, how the float and clear properties can be
+used to create double column text layout. The HTML page should contain several paragraphs
+of text and several images, text should wrap around the images*/
+
+
+.columnsx {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.columndx {
+  float: right;
+  width: 50%;
+  padding: 10px;
+}
+
+img {
+  float: left;
+}
