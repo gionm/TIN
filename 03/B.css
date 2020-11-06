@@ -1,0 +1,59 @@
+/*Assignment B
+Build a page that meets requirements from Assignment A, but using Grid*/
+
+body {
+  background-color: #f8ff85;
+}
+
+.header{
+  margin: auto;
+  width: 50%;
+  border: 0px;
+  padding: 30px;
+  text-align: center;
+}
+
+.hma {
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  box-shadow: 5px 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ima{
+	float: left;
+}
+
+.dqt{
+	float: left;
+	background-color: #a3f6b6;
+}
+
+footer {
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:0px;
+    color:white;
+}
+
+@media (max-width: 800px) {
+ .grid-container {
+	grid-template-columns: 100%;
+ }
+}

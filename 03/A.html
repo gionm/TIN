@@ -1,0 +1,83 @@
+<!-- Assignment A
+Use Flexbox and other properties to create a webpage meeting the following requirements:
+• Header, using an image with rounded corners, rotated and casting shadow + text
+• Gallery, located on the left, containing images with captions (use tags figure and figcaption!)
+• Text on the right (at least 5-6 paragraphs) + images and pulled quotes. Text should be
+wrapped around images and pulled quotes. Pulled quotes should be formatted to stand out
+from surrounding text. Text should be divided into columns, number of columns should
+change dynamically depending on available space to maintain readability
+• Footer – always at the end of the document
+• Use semantic markup, remember about alt attributes
+• On devices with <800 pixels width text should be displayed in a single column, gallery should
+be located after text
+• (option) import two fonts, use one for headers and pulled quotes, second for main text and
+captions
+• Background, colors – it is up to you
+• Following pages contain example screenshots from a page meeting above requirements // -->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="A.css">
+ <title>A</title> 
+</head>
+<body>
+
+<div class="header">
+   <img src="https_header.jpg" class="hma" alt="hhh" border=0 height=100% width=100%></img>
+   <h1>HTTPS Protocol</h1>
+</div>
+<br><br><br><br>
+<div class="flex-container">
+
+       <div class="gal">
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	   <img src="https_header.jpg" class="gma" alt="https" border=0 height=100 width=250></img>
+	  </div>
+
+	  <div>
+	  
+	      <div class="row">
+				<div class="columnsx">
+				  <h1>HTTPS</h1>
+				  <figure>
+					<img src="lock.png" class="ima" alt="lock" border=3 height=100 width=100>
+					<figcaption>SECURE</figcaption>
+				  </figure>
+		  
+			  <p>In its popular operation on the Internet, HTTPS provides authentication ofthe website and associated web server with which one of the parties is communicating, protecting the communication from known attacks through the man in the middle technique.</p> 
+				  <figure>
+					<img src="lock.png" class="ima" alt="lock" border=3 height=100 width=100>
+					<figcaption>SECURE</figcaption>
+				  </figure>   
+			  <p>Furthermore, HTTPS provides a two-way encryption of communications between a client and a server , which protects the same against possible eavesdropping operations , (an action by which the private conversation between the parties is secretly listened without their consent ) and tampering ( literally tampering with or alteration of the communication ) falsifying its contents.</p> 
+	      </div>
+	  
+	      <div class="columnrx">
+				  <p>In practice, this mechanism provides a satisfactory guarantee that you are communicating exactly with the desired website (as opposed to a fake website), as well as ensuring that the contents of the communications between the user and the website are not can be intercepted or altered by third parties.</p>
+				  <p>Historically, HTTPS connections were primarily used for payments in World Wide Web transactions , e-mails, and for sensitive transactions within corporate information systems . In the late 2000s and early 2010s, HTTPS began to have widespread and widespread use to protect the authenticity of web pages , the security of user accounts, and to keep the communications, identity and web browsing of the web private. 'user. </p> 
+			  
+			         <div class="dqt">
+						<p" style="color:white;"><i>"Pull Q"</i></p>
+						<p style="color:white">H</p>
+					 </div>
+			  
+				  <p>This system was designed by Netscape Communications Corporation which deals with authentication and encrypted communications and is widely used on the www.</p>
+		  </div>
+		  
+	  </div>  
+</div>
+</body>
+<footer>
+  <p class="fp">Footer https page</p>
+</footer>
+</html>
