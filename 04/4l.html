@@ -1,0 +1,46 @@
+<!-- Write a JavaScript program for binary search. // -->
+
+<body>
+Enter the number to search: <input id = "num">  
+<br><br><br>
+<button onclick = "show_BS()"> Binary Search </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+<script>
+
+function BinSearch(arr, x, start, end)
+{
+	if (start > end) 
+		return false; 
+		
+	var mid = Math.floor((start + end)/2);
+	
+	if (arr[mid] == x) 
+		return mid;
+		
+	if(arr[mid] > x)  
+        return BinSearch(arr, x, start, mid-1); 
+    else
+		return BinSearch(arr, x, mid+1, end);
+}
+
+function show_BS()
+{
+	var i=0;
+	var arr = [];
+	for(i=0; i<100; i++)
+	{
+		arr[i]=i;
+	}
+	s=0;
+	e = arr.length - 1;
+	console.log(arr);
+	var g = document.getElementById("num").value;
+	var out = BinSearch(arr, g, 0, 99);
+	document.getElementById("res").innerHTML = "Result: " + out;
+	console.log("Result: " + out);
+}
+</script>
+</body>
+</html>

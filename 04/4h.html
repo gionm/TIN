@@ -1,0 +1,25 @@
+<!--Write a JavaScript function which will take an array of numbers stored and 
+find the second lowest and second greatest numbers, respectively. // -->
+
+<html>
+<body>
+<script>
+function SecLowGre(arr)
+{
+	arr.sort(function(x, y){return x-y;});
+	var len = arr.length;
+	if(len>=0 && len<4)
+		console.log("Not enough elements to figure out the problem. Needed least 4 element.");
+	else if (len < 0)
+		console.log("error!");
+		else{
+			var s_min = arr[1];
+			var s_max = arr[len - 2];
+			console.log("Second lowest: " + s_min + "  " + "Second greatest: " + s_max);
+		}
+}
+SecLowGre([8, 4, 5, 7, 3, 4, 1]);
+SecLowGre([8, 4]);
+</script>
+</body>
+</html>

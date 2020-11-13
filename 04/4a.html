@@ -1,0 +1,50 @@
+<!-- a) Function calculating the factorial of a number. 
+Do this using recursion and iteration. Create recursive function using function expression, 
+iterative function using function declaration // -->
+
+<html>
+<body>
+Enter the number you want know its factorial (recursive): <input id = "num">  
+<br><br><br>
+<button onclick = "show_fac_ric()"> Calculate Factorial </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+Enter the number you want know its factorial (iterative): <input id = "num_i">  
+<br><br><br>
+<button onclick = "show_fac_ite()"> Calculate Factorial </button>  
+<br>
+<p id = "res_i"></p> 
+
+<script>
+
+
+function factorial_ric(n){
+	return (n != 1) ? n * factorial_ric(n-1) : 1;
+}
+
+function show_fac_ric(){
+	var n = document.getElementById("num").value;
+	var r = factorial_ric(n);
+	document.getElementById("res").innerHTML = "Result: " + r;
+	console.log("Result: " + r);
+}
+
+
+
+function factorial_ite(n){
+	var i = 1;
+	var s = 1;
+	while (i <= n) s *= i++;
+	return s;
+}
+
+function show_fac_ite(){
+	var g = document.getElementById("num_i").value;
+	var out = factorial_ite(g);
+	document.getElementById("res_i").innerHTML = "Result: " + out;
+	console.log("Result: " + out);
+}
+</script>
+</body>
+</html>

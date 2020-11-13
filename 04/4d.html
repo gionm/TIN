@@ -1,0 +1,28 @@
+<!--Write a JavaScript function that returns a passed string with letters in alphabetical order.
+Example string : 'webmaster' 
+Expected Output : 'abeemrstw' // -->
+
+<html>
+<body>
+Enter a string: <input id = "num">  
+<br><br><br>
+<button onclick = "show_orderA()"> Order </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+
+<script>
+function Order_alpha(str) {
+    return str.split('').sort().join('');
+}
+
+function show_orderA()
+{
+	var g = document.getElementById("num").value;
+	var out = Order_alpha(g);
+	document.getElementById("res").innerHTML = "Result: " + out;
+	console.log("Result: " + out);
+}
+</script>
+</body>
+</html>

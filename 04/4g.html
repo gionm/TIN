@@ -1,0 +1,39 @@
+<!-- Write a JavaScript function which accepts an argument and returns the type // -->
+
+<html>
+<body>
+<h1>See Console in Inspection section for the output</h1>
+<script>
+
+
+function Type(ins)
+{
+var data_types = [Function, RegExp, Number, String, Boolean, Object];
+var len;
+var i;
+    
+if (typeof ins === "object" || typeof ins === "function") 
+    {
+	 len = data_types.length
+     for (i = 0; i < len; i++) 
+     {
+            if (ins instanceof data_types[i])
+            {
+                return data_types[i];
+            }
+      }
+    }
+return typeof ins;
+}
+
+var obj = new String();
+var path = /4g.html/
+console.log(Type(obj));
+console.log(Type(path));
+console.log(Type(Type));
+console.log(Type(12));
+console.log(Type('abc'));
+console.log(Type(true));
+</script>
+</body>
+</html>

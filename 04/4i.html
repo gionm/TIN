@@ -1,0 +1,41 @@
+<!-- Write a JavaScript function to convert an amount of money to coins.
+Sample function : amountTocoins(46, [25, 10, 5, 2, 1]) 
+Here 46 is the amount. and 25, 10, 5, 2, 1 are coins. 
+Output : 25, 10, 10, 1 // -->
+
+
+<html>
+<body>
+Enter an amount: <input id = "amount">  
+<br><br><br>
+<button onclick = "show_Con()"> Convert to coins </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+<script>
+function Convert(amount, coins)
+{
+	var tmp = amount;
+	var CLen = coins.length;
+	var i = 0;
+	var sol = [];
+	
+	for(i=0; i <= CLen-1; i++)
+	{
+		while((tmp - coins[i]) >= 0)
+		{
+			tmp = tmp - coins[i];
+			console.log(coins[i]);
+		}
+	}
+	return sol;
+}
+
+function show_Con()
+{	var coi = [25, 10, 5, 2, 1];
+	var g = document.getElementById("amount").value;
+	Convert(46, coi);
+}
+</script>
+</body>
+</html>

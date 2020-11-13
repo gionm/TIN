@@ -1,0 +1,34 @@
+<!--Write a JavaScript function that checks whether a passed string is palindrome or not // -->
+
+<html>
+<body>
+Enter a string: <input id = "num">  
+<br><br><br>
+<button onclick = "show_pali()"> Palindrome? </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+<script>
+function Palindrome(str) {
+
+    const len = str.length;
+
+    for (let i = 0; i < len / 2; i++) {
+
+        if (str[i] !== str[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+
+function show_pali()
+{
+	var g = document.getElementById("num").value;
+	var out = Palindrome(g);
+	document.getElementById("res").innerHTML = "Result: " + out;
+	console.log("Result: " + out);
+}
+</script>
+</body>
+</html>

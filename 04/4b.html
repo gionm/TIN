@@ -1,0 +1,36 @@
+<!--Function calculating nth number in Fibonacci sequence. // -->
+
+
+<html>
+<body>
+
+Enter a number: <input id = "num">  
+<br><br><br>
+<button onclick = "show_fibo()"> Calculate Fibonacci </button>  
+<br>
+<p id = "res"></p> 
+<br><br><br><br><br><br>
+
+<script>
+function fibonacci(n){
+  var a = 1, b = 0, tmp;
+  
+  while (n >= 0){
+    tmp = a;
+    a = a + b;
+    b = tmp;
+	console.log(b);
+    n--;
+  }
+  return b;
+}
+
+function show_fibo(){
+	var g = document.getElementById("num").value;
+	var out = fibonacci(g);
+	document.getElementById("res").innerHTML = "Result: " + out;
+	console.log("Result: " + out);
+}
+</script>
+</body>
+</html>
