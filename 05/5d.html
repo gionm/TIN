@@ -1,0 +1,49 @@
+<!--Extend task B with getter for average grade property and getter and setter for student’s full name // -->
+
+<html>
+<body>
+
+<script>
+
+const student = {
+  name: "George",
+  surname: "Anderson",
+  id: "123",
+  grades: [25, 26, 27, 28, 29, 30],
+  
+  showpd: function() {
+    var s = 0;
+	for (var i=0; i<this.grades.length; i++)
+		s += this.grades[i]
+	var a = s / this.grades.length;
+    console.log(`Ehy! My n
+	ame is ${this.name}. My surname is ${this.surname}. My grades average is ${a}`);
+  },
+  
+  getAvg: function() {
+        var s = 0;
+		for (var i=0; i<this.grades.length; i++)
+			s += this.grades[i]
+		var a = s / this.grades.length;
+		return a;
+   },
+   
+   getFullName: function() {
+       return this.name + " " + this.surname;
+   },
+   
+   setFullName: function(na, su) {
+	this.name = na;
+	this.surname = su;
+    }
+};
+
+const s1 = Object.create(student);
+console.log(s1.getAvg());
+console.log(s1.getFullName());
+s1.setFullName("Paolo", "Rossi");
+console.log(s1.getFullName());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!--Create a prototype of a student object using initializer. 
+The object should contain an array with list of courses each student should take. 
+Write a function creating new objects based on this prototype, setting their first and last name and id properties. // -->
+
+<html>
+<body>
+
+<script>
+	function Student(first, last, id) {
+	  this.firstName = first;
+	  this.lastName = last;
+	  this.id = id;
+	  this.courses = ["BYT", "SMB", "ZMI"];
+	}
+	
+var s1 = new Student("Tim", "Cook", 111);
+console.log(s1);
+</script>
+
+</body>
+</html>

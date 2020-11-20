@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h1>The JavaScript </h1>
+
+<script>
+
+let cpu = {
+    name: 'Ryzen',
+    model: '5',
+	core1: 4,
+	core2: 6,
+    max: function () {
+        return Math.max(this.core1, this.core2);
+    },
+    fullName: function () {
+        return this.name + ' ' + this.model;
+    }
+};
+
+console.log(cpu.max());
+console.log(cpu.fullName());
+</script>
+
+</body>
+</html>

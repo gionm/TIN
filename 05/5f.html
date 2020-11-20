@@ -1,0 +1,56 @@
+<!-- Create class Person with first and last name, as well as getter and setter for full name. Rewrite Student class from task E to extend class Person // -->
+
+<html>
+<body>
+
+<script>
+
+class Person {
+
+	
+	
+    constructor(firstName, lastName) {
+        this._firstName = firstName;
+        this._lastName = lastName;
+    }
+	
+	
+	set fullName(name) {
+        var names = name.split(" ");
+        this._firstName = names[0];
+        this._lastName = names[1];
+    }
+
+    get fullName() {
+        return this._firstName + " " + this._lastName;
+    }
+
+    get avg(){
+		var s = 0;
+		for (var i=0; i<this._grades.length; i++)
+			s += this._grades[i]
+		var a = s / this._grades.length;
+		return a;
+	}
+}
+
+class Student extends Person{
+
+	constructor(firstName, lastName, id) {
+    super(firstName, lastName);
+    this._id = id;
+	this._grades = [25, 26, 27, 28, 29, 30];
+  }
+
+}
+
+
+let s1 = new Student('Jack', 'Sparrow', 111);
+console.log(s1.avg);
+console.log(s1.fullName);
+s1.fullName = "Aldo Marchielli";
+console.log(s1.fullName);
+</script>
+
+</body>
+</html>
